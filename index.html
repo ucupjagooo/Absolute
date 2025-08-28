@@ -1,120 +1,107 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Absolute Hardcore</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo HC Private</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0a0a0a;
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+      color: #f2f2f2;
+    }
+
+    header {
+      background: #b30000;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #141414;
+      border: 2px solid #b30000;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(179,0,0,0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255,0,0,0.8);
+    }
+
+    .card h2 {
+      color: #ff3333;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+    }
+
+    .card ul, .card p {
+      font-size: 0.95rem;
       line-height: 1.6;
     }
-    header {
-      background: #111;
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 2px solid #c00;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 2px;
-    }
-    nav {
-      margin-top: 0.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      background: #1a1a1a;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      border: 1px solid #c00;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      background: #c00;
-      color: #fff;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    section {
-      background: #1a1a1a;
-      padding: 1.5rem;
-      border-radius: 12px;
-      border: 1px solid #333;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 15px rgba(255,0,0,0.2);
-    }
-    h2 {
-      margin-top: 0;
-      border-bottom: 2px solid #c00;
-      padding-bottom: 0.5rem;
-    }
+
     ul {
-      padding-left: 1.2rem;
+      padding-left: 20px;
     }
-    .rank-shop table {
-      width: 100%;
-      border-collapse: collapse;
+
+    footer {
+      text-align: center;
+      background: #0d0d0d;
+      padding: 15px;
+      margin-top: 30px;
+      color: #777;
+      font-size: 0.9rem;
     }
-    .rank-shop th, .rank-shop td {
-      border: 1px solid #444;
-      padding: 0.5rem;
-      text-align: left;
-    }
-    .rank-shop th {
-      background: #c00;
-    }
-    .links a {
-      display: block;
-      margin-bottom: 0.5rem;
-      color: #0ff;
+
+    a {
+      color: #ff4d4d;
       text-decoration: none;
+      font-weight: bold;
     }
-    .links a:hover {
+
+    a:hover {
       text-decoration: underline;
-      color: #fff;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>ABSOLUTE HARDCORE</h1>
-    <nav>
-      <a href="#info">Info</a>
-      <a href="#aturan">Aturan</a>
-      <a href="#fitur">Fitur</a>
-      <a href="#rank">Rank Shop</a>
-      <a href="#link">Link</a>
-    </nav>
-  </header>
+
+  <header>Demo HC Private</header>
 
   <div class="container">
-    <section id="info">
-      <h2>ABSOLUTE HC II - INFO SINGKAT</h2>
-      <p>IP SERVER: <strong>absolutehc.my.id:25515</strong></p>
-      <p>Versi: 1.19.2 - 1.21.4</p>
-    </section>
-
-    <section id="aturan">
+    <div class="card">
       <h2>Aturan Utama</h2>
       <ul>
         <li>Dilarang cheat/hack (ban permanen)</li>
         <li>Border dunia: **** x ****</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Peraturan Game</h2>
+      <ul>
         <li>Boleh X-ray (kecuali cheat)</li>
         <li>Dilarang bunuh/curi dari player AFK</li>
-        <li>Tidak boleh grief, maling base</li>
+        <li>Tidak boleh grief atau maling base</li>
         <li>No mixing / OOC / RP non-SC</li>
         <li>No DC saat war/RP kecuali darurat</li>
         <li>Meta MACE diperbolehkan</li>
@@ -122,39 +109,71 @@
         <li>No baper, no bullying</li>
         <li>NO SHARE GRUP KONTOL</li>
       </ul>
-    </section>
+    </div>
 
-    <section id="fitur">
+    <div class="card">
       <h2>Fitur Server</h2>
       <p>GSIT, Treefaller, Vein Miner, Skin Restorer, Voice Chat, TNTC, Emotcraft, /tas, /riwayat, dll</p>
-      <p><strong>Voice Chat:</strong> Wajib install: CIT Reseown & RPrename</p>
-    </section>
+    </div>
 
-    <section id="rank" class="rank-shop">
+    <div class="card">
+      <h2>Versi & Mod</h2>
+      <ul>
+        <li>Versi: 1.19.2 - 1.21.4</li>
+        <li>Wajib install: CIT Reseown & RPrename</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Resource Pack</h2>
+      <a href="https://www.mediafire.com/file/ladx1gnylizvn1r/Brutal_H%2Ardc%2Ar%2A_Phase_3_Resource_Pack_V1.6-1.zip/file" target="_blank">
+        Download di sini
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>Link Mod</h2>
+      <a href="https://www.curseforge.com/minecraft/mc-mods/cit-resewn" target="_blank">CIT Reseown</a>
+    </div>
+
+    <div class="card">
+      <h2>IP Server</h2>
+      <p><strong>absolutehc.my.id:25515</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>Sosial</h2>
+      <p><a href="https://chat.whatsapp.com/JWpCR9VZSK118VGbP7QQq3?mode=r_c" target="_blank">Grup WA</a></p>
+      <p><a href="https://discord.gg/7hGgURya" target="_blank">Discord</a></p>
+    </div>
+
+    <div class="card">
+      <h2>Owner & Staff</h2>
+      <ul>
+        <li>Owner: asep</li>
+        <li>Partner: -</li>
+        <li>Staff: 'Ucup</li>
+      </ul>
+    </div>
+
+    <div class="card">
       <h2>Rank Shop</h2>
-      <table>
-        <tr><th>Rank</th><th>Harga</th></tr>
-        <tr><td>MEDIA (HARUS LIVE)</td><td>Gratis</td></tr>
-        <tr><td>VIP</td><td>10K</td></tr>
-        <tr><td>PRO</td><td>30K</td></tr>
-        <tr><td>SULTAN</td><td>50K</td></tr>
-        <tr><td>ABSOLUTE +</td><td>100K</td></tr>
-        <tr><td>CINEMA ++</td><td>150K</td></tr>
-        <tr><td>CUSTOM RANK</td><td>200K</td></tr>
-      </table>
-      <p><strong>INFO:</strong> Kalau mau beli rank ke ‪+62 815-2757-8908‬</p>
-    </section>
-
-    <section id="link" class="links">
-      <h2>Link Penting</h2>
-      <a href="https://www.mediafire.com/file/ladx1gnylizvn1r/Brutal_H%2Ardc%2Ar%2A_Phase_3_Resource_Pack_V1.6-1.zip/file" target="_blank">Resource Pack</a>
-      <a href="https://www.curseforge.com/minecraft/mc-mods/cit-resewn" target="_blank">Rename Item (CIT Resewn)</a>
-      <a href="https://chat.whatsapp.com/JWpCR9VZSK118VGbP7QQq3?mode=r_c" target="_blank">Group WhatsApp</a>
-      <a href="https://discord.gg/7hGgURya" target="_blank">Discord</a>
-      <p><strong>Owner:</strong> Asep</p>
-      <p><strong>Partner:</strong> -</p>
-      <p><strong>Staff:</strong> 'Ucup</p>
-    </section>
+      <ul>
+        <li>MEDIA (HARUS LIVE)</li>
+        <li>VIP (10K)</li>
+        <li>PRO (30K)</li>
+        <li>SULTAN (50K)</li>
+        <li>ABSOLUTE + (100K)</li>
+        <li>CINEMA ++ (150K)</li>
+        <li>CUSTOM RANK (200K)</li>
+      </ul>
+      <p>Hubungi: <strong>+62 815-2757-8908</strong></p>
+    </div>
   </div>
+
+  <footer>
+    © 2025 Demo HC Private — Semua Hak Dilindungi
+  </footer>
+
 </body>
 </html>
